@@ -1,8 +1,11 @@
 .card {
-	max-inline-size: 400px;
+	max-inline-size: fit-content;
+  max-block-size: fit-content;
+
+	padding-inline: 20px;
+	padding-block: 20px;
+
 	background-color: var(--color-secondary);
-  padding: 20px;
-  flex-grow: 1;
 }
 
 .title {
@@ -10,5 +13,5 @@
 }
 
 .second {
-  color: var(--color-primary);
+	color: var(--color-primary);
 }
