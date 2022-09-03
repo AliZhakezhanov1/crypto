@@ -1,4 +1,5 @@
-import { ICryptos } from './types';
+import { ICryptosRes } from './types'
+
 export const cryptosMock = [
 	{
 		currency: 'BTC',
@@ -54,7 +55,7 @@ export const cryptosMock = [
 	}
 ]
 
-export const getCryptosMock = (): Promise<{ data: ICryptos[] }> => {
+export const getCryptosMock = (): Promise<{ data: ICryptosRes[] }> => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => resolve({ data: cryptosMock }), 1000)
 	})

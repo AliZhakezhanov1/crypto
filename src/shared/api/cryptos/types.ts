@@ -1,4 +1,4 @@
-export interface ICryptos {
+export interface ICryptosRes {
 	currency: string
 	id: string
 	status: string

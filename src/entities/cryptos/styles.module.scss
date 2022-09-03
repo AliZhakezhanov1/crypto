@@ -1,0 +1,14 @@
+.card {
+	max-inline-size: 400px;
+	background-color: var(--color-secondary);
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.title {
+	color: var(--color-primary);
+}
+
+.second {
+  color: var(--color-primary);
+}

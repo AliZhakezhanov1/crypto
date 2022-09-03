@@ -1,8 +1,8 @@
 // import { instance } from './base'
 import { getCryptosMock } from './mock'
-import { ICryptoParam, ICryptos } from './types'
+import { ICryptoParam, ICryptosRes } from './types'
 
-export const getCryptos = async ({ page = 1 }: ICryptoParam): Promise<ICryptos[]> => {
+export const getCryptos = async ({ page = 1 }: ICryptoParam): Promise<ICryptosRes[]> => {
 	/* use with backend */
 
 	// const res = await instance({

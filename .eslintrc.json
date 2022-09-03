@@ -4,12 +4,12 @@
 		"es2021": true
 	},
 	"extends": [
-    "react-app",
-    "react-app/jest",
+		"react-app",
+		"react-app/jest",
 		"eslint:recommended",
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
-    "prettier"
+		"prettier"
 	],
 	"overrides": [],
 	"parser": "@typescript-eslint/parser",
@@ -18,9 +18,9 @@
 	},
 	"plugins": ["react", "@typescript-eslint"],
 	"rules": {
-    "react/react-in-jsx-scope": "off",
+		"react/react-in-jsx-scope": "off",
 		"react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
-		"ignoreTranspilerName": 0,
+		"react/display-name": [0, { "ignoreTranspilerName": false }],
 		"@typescript-eslint/no-var-requires": 0
 	}
 }
