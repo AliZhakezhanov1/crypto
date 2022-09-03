@@ -48,5 +48,5 @@ export interface ICryptoVolTransparency {
 }
 
 export interface ICryptoParam {
-	page: number
+	page?: number
 }
