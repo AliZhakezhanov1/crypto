@@ -4,7 +4,7 @@ import './styles.scss'
 const HomePage: FC = () => {
   return (
     <>
-
+    
     </>
   )
 }
