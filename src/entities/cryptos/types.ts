@@ -1,5 +1,6 @@
 import { ICryptosRes } from '@/shared/api'
 
 export interface ICryptos {
-	data: ICryptosRes
+	data: ICryptosRes,
+	convert: string
 }

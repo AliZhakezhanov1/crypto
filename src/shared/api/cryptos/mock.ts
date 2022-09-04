@@ -27,7 +27,7 @@ export const cryptosMock = [
 		rank_delta: '0',
 		high: '19404.81116899',
 		high_timestamp: '2017-12-16',
-		'1d': {
+		'1h': {
 			price_change: '269.75208019',
 			price_change_pct: '0.03297053',
 			volume: '1110989572.04',

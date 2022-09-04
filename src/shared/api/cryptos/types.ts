@@ -24,10 +24,10 @@ export interface ICryptosRes {
 	rank_delta: string
 	high: string
 	high_timestamp: string
-  '1d': ICryptoId
+	'1h': ICryptosId
 }
 
-export interface ICryptoId {
+export interface ICryptosId {
 	price_change: string
 	price_change_pct: string
 	volume: string
@@ -37,16 +37,19 @@ export interface ICryptoId {
 	market_cap_change_pct: string
 	transparent_market_cap_change: string
 	transparent_market_cap_change_pct: string
-	volume_transparency: ICryptoVolTransparency[]
+	volume_transparency: ICryptosVolTransparency[]
 }
 
-export interface ICryptoVolTransparency {
+export interface ICryptosVolTransparency {
 	grade: string
 	volume: string
 	volume_change: string
 	volume_change_pct: string
 }
 
-export interface ICryptoParam {
+export type TConvert = string
+
+export interface ICryptosParam {
 	page?: number
+	convert: TConvert
 }

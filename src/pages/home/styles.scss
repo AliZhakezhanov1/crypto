@@ -1,0 +1,25 @@
+.home_section {
+	padding-block-start: 100px;
+	padding-block-end: 15px;
+}
+
+.home_title {
+	color: var(--color-secondary);
+
+	margin-top: 20px;
+}
+
+.home_progress_wrapper {
+	position: absolute;
+	left: calc(50% - 20px);
+	top: 50%;
+}
+
+.cryptos_wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+	gap: 15px;
+	grid-auto-flow: dense;
+
+	margin-top: 100px;
+}

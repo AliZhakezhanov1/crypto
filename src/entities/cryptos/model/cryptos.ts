@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { getCryptos } from '@/shared/api'
+import { ICryptosParam, getCryptos } from '@/shared/api'
 import { ICryptosState } from './types'
 
 const name = `entities:cryptos`
@@ -7,13 +7,21 @@ const name = `entities:cryptos`
 const initialState: ICryptosState = {
 	details: [],
 	status: 'idle',
-	error: null
+	error: null,
+	fiat: 'USD'
 }
 
 export const cryptosSlice = createSlice({
 	name,
 	initialState,
-	reducers: {},
+	reducers: {
+		setFiat(state, action) {
+			state.fiat = action.payload
+		},
+		deleteDetails(state, action) {
+			state.details = []
+		}
+	},
 	extraReducers(builder) {
 		builder
 			.addCase(fetchCryptos.pending, (state, action) => {
@@ -31,8 +39,9 @@ export const cryptosSlice = createSlice({
 	}
 })
 
-export const fetchCryptos = createAsyncThunk(`${name}/fetchCryptos`, async () => {
-	const res = await getCryptos({})
-	console.log(res)
+export const { setFiat, deleteDetails } = cryptosSlice.actions
+
+export const fetchCryptos = createAsyncThunk(`${name}/fetchCryptos`, async ({ page, convert }: ICryptosParam) => {
+	const res = await getCryptos({ page, convert })
 	return res
 })
