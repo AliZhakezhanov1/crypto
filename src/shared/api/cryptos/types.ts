@@ -50,6 +50,6 @@ export interface ICryptosVolTransparency {
 export type TConvert = string
 
 export interface ICryptosParam {
-	page?: number
+	page: number
 	convert: TConvert
 }

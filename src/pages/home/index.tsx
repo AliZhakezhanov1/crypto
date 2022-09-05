@@ -57,7 +57,7 @@ const HomePage: FC = () => {
 	return (
 		<DefaultLayout>
 			<Section className='home_section'>
-				<Container maxWidth='xl'>
+				<Container maxWidth='xl' sx={{ position: 'relative' }}>
 					<Typography variant='h2' fontWeight={700} component='h2' textAlign='center' className='home_title'>
 						Welcome to Cryptos
 					</Typography>

@@ -11,8 +11,14 @@
 
 .home_progress_wrapper {
 	position: absolute;
-	left: calc(50% - 20px);
-	top: 50%;
+	top: 100%;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-block-size: 60vh;
+	inline-size: 100%;
 }
 
 .cryptos_wrapper {

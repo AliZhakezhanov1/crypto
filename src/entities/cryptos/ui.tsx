@@ -18,7 +18,8 @@ const Cryptos: FC<ICryptos> = ({ data, convert }) => {
 						{data.currency}
 					</Typography>
 					<Typography variant='h6' fontWeight={500} component='h6' className='card_title'>
-						{convert }{data.price}
+						<span>{convert} </span>
+						<span>{data.price}</span>
 					</Typography>
 				</Box>
 				<Box className='card_image'>
