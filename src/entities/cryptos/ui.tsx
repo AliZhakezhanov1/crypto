@@ -49,7 +49,7 @@ const Cryptos: FC<ICryptos> = ({ data, convert }) => {
 						component='div'
 						className='card_volume_subtitle card_item_subtitle'
 					>
-						{data['1h'].volume}
+						{data['1h'] && data['1h'].volume}
 					</Typography>
 				</Box>
 				<Box className='card_change'>
@@ -67,7 +67,7 @@ const Cryptos: FC<ICryptos> = ({ data, convert }) => {
 						component='div'
 						className='card_change_subtitle card_item_subtitle'
 					>
-						{data['1h'].price_change}
+						{data['1h'] && data['1h'].price_change}
 					</Typography>
 				</Box>
 			</Box>
